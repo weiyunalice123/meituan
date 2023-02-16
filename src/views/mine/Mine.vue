@@ -8,7 +8,7 @@
             <van-loading type="spinner" size="20" />
           </template>
         </van-image>
-        <div class="text_info">
+        <div class="text_info" v-if="isLogin === '1'">
           <label>{{ userinfo.userName }}</label>
           <p>
             <span>{{ userinfo.tel }}</span>
@@ -18,6 +18,7 @@
             </i>
           </p>
         </div>
+        <a class="login_Register" v-else href="javscript:void(0);" @click="loginAndRegister">登录/注册</a>
       </div>
     </div>
     <div class="content">
@@ -37,17 +38,19 @@
           </li>
         </ul>
       </div>
-      <van-button type="default" block>退出</van-button>
+      <van-button type="default" block @click="logout" v-if="isLogin === '1'">退出</van-button>
     </div>
     <Footer />
-  </div>
+</div>
 </template>
 
 <script>
+
 import Footer from '../../components/Footer.vue';
 import Header from '../../components/Header.vue';
 import { reactive, toRefs } from 'vue';
 import { useRouter } from 'vue-router';
+import { useStore } from 'vuex';
 export default {
   components: {
     Footer,
@@ -55,7 +58,9 @@ export default {
   },
   setup() {
     const router = useRouter();
+    const store = useStore();
     const data = reactive({
+      isLogin: localStorage.getItem("isLogin"),
       userinfo: {
         userName: "every_day_smile",
         tel: 18240898953,
@@ -124,22 +129,26 @@ export default {
 
     //列表点击事件
     const actionClick = (id) => {
-      switch (id) {
-        case 1:
-          router.push('/redpacket');
-          break;
-        case 2:
-          router.push('/coupon');
-          break;
-        case 3:
-          router.push('/allowance');
-          break;
-        case 4:
-          router.push('/mywallet');
-          break;
-        case 5:
-          router.push('/address');
-          break;
+      if (localStorage.isLogin !== "1") {
+        router.push('/login');
+      } else {
+        switch (id) {
+          case 1:
+            router.push('/redpacket');
+            break;
+          case 2:
+            router.push('/coupon');
+            break;
+          case 3:
+            router.push('/allowance');
+            break;
+          case 4:
+            router.push('/mywallet');
+            break;
+          case 5:
+            router.push('/address');
+            break;
+        }
       }
     }
 
@@ -147,10 +156,24 @@ export default {
     const changePhoneNum = () => {
       router.push("/validationcenter");
     }
+
+    //退出登录
+    const logout = () => {
+      router.push('/login');
+      localStorage.setItem("isLogin", "0");
+    }
+
+    //登录注册
+    const loginAndRegister = () => {
+      store.commit('UPDATE_CURRENT_ROUTE', 'mine')
+      router.push('/login');
+    }
     return {
       ...toRefs(data),
       actionClick,
       changePhoneNum,
+      logout,
+      loginAndRegister
     }
   }
 }
@@ -176,6 +199,11 @@ export default {
     .info {
       display: flex;
       align-items: center;
+
+      .login_Register {
+        color: #000;
+        font-size: 14px;
+      }
 
       .text_info {
         label {
@@ -271,5 +299,4 @@ export default {
       margin-bottom: 60px;
     }
   }
-}
-</style>
+}</style>

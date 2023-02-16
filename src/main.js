@@ -25,7 +25,10 @@ import {
   CollapseItem,
   Tag,
   Swipe, 
-  SwipeItem
+  SwipeItem,
+  Form,
+  Field,
+  CellGroup
 } from 'vant';
 import router from './router/index';
 import './common/css/base.less';
@@ -54,7 +57,10 @@ app
   .use(Tag)
   .use(Swipe)
   .use(SwipeItem)
-  .use(VanImage);
+  .use(VanImage)
+  .use(Form)
+  .use(Field)
+  .use(CellGroup);
 app.use(router);
 app.use(store);
 app.mount('#app');

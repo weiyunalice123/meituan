@@ -29,6 +29,7 @@ export default createStore({
         areaCode: '110101'
       }
     ],
+    currentRoute: '',
   },
   mutations:{//同步
     ADDCART(state, value) {//加入购物车
@@ -73,7 +74,10 @@ export default createStore({
           state.userAddress[0].isDefault = true;
         }
       }
-    }
+    },
+    UPDATE_CURRENT_ROUTE(state, value) {//记录当前是从哪个页面跳转到登陆页面，登陆进去直接跳转到这个页面
+      state.currentRoute = value;
+    },
   },
   actions:{}//异步
 })
