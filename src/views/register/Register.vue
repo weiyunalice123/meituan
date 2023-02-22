@@ -7,6 +7,8 @@
         <van-cell-group inset>
           <van-field v-model="username" name="username" label="用户名" placeholder="用户名"
             :rules="[{ required: true, message: '请填写用户名' }]" />
+          <van-field v-model="tel" type="tel" name="tel" label="手机号" placeholder="手机号"
+          :rules="[{ required: true, message: '请填写手机号'}]" />
           <van-field v-model="password" type="password" name="password" label="密码" placeholder="密码"
             :rules="[{ required: true, message: '请填写密码' }]" />
           <van-field v-model="confirmedpwd" type="password" name="confirmedpwd" label="确认密码" placeholder="确认密码"
@@ -29,29 +31,35 @@
 import Header from "../../components/Header.vue";
 import { reactive, toRefs } from "vue";
 import { Toast } from "vant";
-import router from "../../router";
+import { useRouter } from "vue-router";
+import { useStore } from "vuex";
 export default {
   components: {
     Header,
   },
   setup() {
+    const router = useRouter();
+    const store = useStore()
     const data = reactive({
       username: "",
+      tel: "",
       password: "",
       confirmedpwd: "",
     })
 
-    const register = (value) => {
+    const register = (value) => {   
       if (value.password !== value.confirmedpwd) {
         Toast("请确保两次输入的密码一致");
         return;
       } else {
         let userInfo = {
           username: value.username,
+          tel: value.tel,
           password: value.password,
           confirmedpwd: value.confirmedpwd,
         };
         localStorage.setItem('userInfo', JSON.stringify(userInfo));
+        store.commit('UPDATE_CURRENT_ROUTE', '/mine');
         Toast("注册成功，请登录");
         router.push('/login');
       }
@@ -61,6 +69,7 @@ export default {
         let userInfo = JSON.parse(localStorage.userInfo);
         if (value.username === userInfo.username) {
           Toast("该账号已存在，请登录");
+          router.push('/login');
           return;
         } else {
           register(value);

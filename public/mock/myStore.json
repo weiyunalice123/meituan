@@ -1,0 +1,827 @@
+{
+  "code": "0000",
+  "data": [
+    {
+      "storeImg": "./xiaoliu.png",
+      "title": "小六汤包",
+      "imgPath": "./xiaoliu1.png",
+      "storeData": [
+        {
+          "name": "点菜",
+          "data": {
+            "content": "点菜",
+            "items": [
+              {
+                "text": "热销套餐",
+                "children": [
+                  {
+                    "id": 0,
+                    "pic": "./myStore/xiaoliu/1.png",
+                    "title": "牛肉汤包",
+                    "num": [
+                      "月售 16",
+                      "好评度 98%"
+                    ],
+                    "goodsNum": 0,
+                    "salesRank": 1,
+                    "price": 14.0,
+                    "add": true
+                  },
+                  {
+                    "id": 1,
+                    "pic": "./myStore/xiaoliu/2.png",
+                    "title": "猪肉汤包",
+                    "num": [
+                      "月售 56",
+                      "好评度 99%"
+                    ],
+                    "goodsNum": 0,
+                    "popularityRank": 1,
+                    "price": 12,
+                    "add": true
+                  },
+                  {
+                    "id": 2,
+                    "pic": "./myStore/xiaoliu/3.png",
+                    "title": "蟹黄汤包",
+                    "num": [
+                      "月售 67"
+                    ],
+                    "goodsNum": 0,
+                    "popularityRank": 2,
+                    "price": 30.0,
+                    "add": true
+                  },
+                  {
+                    "id": 3,
+                    "pic": "./myStore/xiaoliu/4.png",
+                    "title": "地软粉条包子",
+                    "num": [
+                      "月售67"
+                    ],
+                    "goodsNum": 0,
+                    "popularityRank": 1,
+                    "price": 12.0,
+                    "add": true
+                  },
+                  {
+                    "id": 4,
+                    "pic": "./myStore/xiaoliu/5.png",
+                    "title": "虾肉汤包",
+                    "num": [
+                      "月售 98"
+                    ],
+                    "goodsNum": 0,
+                    "popularityRank": 2,
+                    "price": 18.0,
+                    "add": true
+                  }
+                ]
+              },
+              {
+                "text": "炒菜",
+                "children": [
+                  {
+                    "id": 5,
+                    "pic": "./myStore/xiaoliu/6.png",
+                    "title": "蒜蓉油麦菜",
+                    "price": 18.0,
+                    "label": [
+                      "约500g",
+                      "蒜香",
+                      "清炒"
+                    ],
+                    "num": [
+                      "月售 98"
+                    ],
+                    "goodsNum": 0,
+                    "add": true
+                  },
+                  {
+                    "id": 6,
+                    "pic": "./myStore/xiaoliu/7.png",
+                    "title": "芹菜炒虾仁",
+                    "price": 28.0,
+                    "label": [
+                      "约500g",
+                      "清炒"
+                    ],
+                    "num": [
+                      "月售 26"
+                    ],
+                    "goodsNum": 0,
+                    "add": true
+                  },
+                  {
+                    "id": 7,
+                    "pic": "./myStore/xiaoliu/8.png",
+                    "title": "红烧豆角茄子",
+                    "label": [
+                      "约300g",
+                      "酱香",
+                      "茄子",
+                      "豆角"
+                    ],
+                    "num": [
+                      "月售 34"
+                    ],
+                    "goodsNum": 0,
+                    "price": 26.0,
+                    "add": true
+                  },
+                  {
+                    "id": 8,
+                    "pic": "./myStore/xiaoliu/9.png",
+                    "title": "椒麻鸡",
+                    "price": 56,
+                    "label": [
+                      "约400g",
+                      "偏麻",
+                      "鸡肉"
+                    ],
+                    "num": [
+                      "月售 36"
+                    ],
+                    "goodsNum": 0,
+                    "popularityRank": 2,
+                    "add": true
+                  },
+                  {
+                    "id": 9,
+                    "pic": "./myStore/xiaoliu/10.png",
+                    "title": "清炒土豆丝",
+                    "label": [
+                      "约450g",
+                      "酸辣",
+                      "土豆丝",
+                      "尖椒"
+                    ],
+                    "num": [
+                      "月售 116"
+                    ],
+                    "goodsNum": 0,
+                    "price": 12,
+                    "popularityRank": 3,
+                    "add": true
+                  },
+                  {
+                    "id": 10,
+                    "pic": "./myStore/xiaoliu/11.png",
+                    "title": "尖椒炒肉片",
+                    "label": [
+                      "约400g",
+                      "偏辣",
+                      "猪肉"
+                    ],
+                    "num": [
+                      "月售 78"
+                    ],
+                    "goodsNum": 0,
+                    "price": 28,
+                    "popularityRank": 3,
+                    "add": true
+                  }
+                ]
+              },
+              {
+                "text": "折扣专区",
+                "children": [
+                  {
+                    "id": 11,
+                    "pic": "./myStore/xiaoliu/12.png",
+                    "title": "清炒花白",
+                    "discount": 7,
+                    "coupon": 5,
+                    "num": "",
+                    "goodsNum": 0,
+                    "price": 8.8,
+                    "add": true
+                  },
+                  {
+                    "id": 12,
+                    "pic": "./myStore/xiaoliu/13.png",
+                    "title": "疙瘩汤",
+                    "discount": 8,
+                    "coupon": 3,
+                    "num": 0,
+                    "goodsNum": 0,
+                    "price": 9.0,
+                    "add": true
+                  },
+                  {
+                    "id": 13,
+                    "pic": "./myStore/xiaoliu/14.png",
+                    "title": "韭菜豆腐包子",
+                    "num": 0,
+                    "goodsNum": 0,
+                    "discount": 8,
+                    "price": 9.0,
+                    "add": true
+                  },
+                  {
+                    "id": 14,
+                    "pic": "./myStore/xiaoliu/15.png",
+                    "title": "冰峰",
+                    "num": 0,
+                    "goodsNum": 0,
+                    "price": 1.8,
+                    "discount": 8,
+                    "add": true
+                  },
+                  {
+                    "id": 15,
+                    "pic": "./myStore/xiaoliu/16.png",
+                    "title": "炝拌灰灰菜",
+                    "discount": 8.8,
+                    "num": 0,
+                    "goodsNum": 0,
+                    "price": 12.0,
+                    "add": true
+                  },
+                  {
+                    "id": 16,
+                    "pic": "./myStore/xiaoliu/17.png",
+                    "title": "凉拌莲藕",
+                    "num": "",
+                    "goodsNum": 0,
+                    "discount": 8.8,
+                    "price": 12,
+                    "add": true
+                  },
+                  {
+                    "id": 17,
+                    "pic": "./myStore/xiaoliu/18.png",
+                    "title": "红糖滋粑",
+                    "discount": 8,
+                    "num": 0,
+                    "goodsNum": 0,
+                    " price": 8.0,
+                    "add": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "评价",
+          "data": {
+            "content": "",
+            "items": [
+              {}
+            ]
+          }
+        },
+        {
+          "name": "商家",
+          "data": {
+            "content": "",
+            "items": [
+              {}
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "哈米尼cake手工蛋糕",
+      "storeImg": "./hami.png",
+      "imgPath": "./hami1.png",
+      "storeData": [
+        {
+          "name": "点菜",
+          "data": {
+            "content": "点菜",
+            "items": [
+              {
+                "text": "推荐",
+                "children": [
+                  {
+                    "id": 0,
+                    "pic": "./myStore/hami/1.png",
+                    "title": "8英寸草莓巧克力淋面蛋糕",
+                    "goodsNum": 0,
+                    "label": [
+                      "4人份",
+                      "甜味",
+                      "草莓",
+                      "巧克力"
+                    ],
+                    "price": 98,
+                    "add": true
+                  },
+                  {
+                    "id": 1,
+                    "pic": "./myStore/hami/2.png",
+                    "title": "车厘子蛋糕",
+                    "label": [
+                      "4人份",
+                      "甜味",
+                      "车厘子",
+                      "蛋糕胚"
+                    ],
+                    "goodsNum": 0,
+                    "price": 126,
+                    "add": true
+                  },
+                  {
+                    "id": 2,
+                    "pic": "./myStore/hami/3.png",
+                    "title": "网红渐变爱心蛋糕",
+                    "goodsNum": 0,
+                    "price": 98,
+                    "label": [
+                      "4人份",
+                      "甜味",
+                      "奶油",
+                      "蛋糕胚"
+                    ],
+                    "add": true
+                  },
+                  {
+                    "id": 3,
+                    "pic": "./myStore/hami/4.png",
+                    "title": "8寸巧克力蓝莓蛋糕",
+                    "goodsNum": 0,
+                    "price": 118,
+                    "label": [
+                      "4人份",
+                      "甜味",
+                      "巧克力",
+                      "蓝莓"
+                    ],
+                    "add": true
+                  },
+                  {
+                    "id": 4,
+                    "pic": "./myStore/hami/5.png",
+                    "title": "八寸方形果仁水果蛋糕",
+                    "goodsNum": 0,
+                    "price": 128,
+                    "label": [
+                      "4人份",
+                      "果仁",
+                      "水果",
+                      "蛋糕胚"
+                    ],
+                    "add": true
+                  }
+                ]
+              },
+              {
+                "text": "折扣",
+                "children": [
+                  {
+                    "id": 5,
+                    "pic": "./myStore/hami/6.png",
+                    "title": "足球梦生日蛋糕",
+                    "price": 98.0,
+                    "label": [
+                      "4人份",
+                      "甜味",
+                      "奶油",
+                      "蛋糕胚"
+                    ],
+                    "goodsNum": 0,
+                    "add": true
+                  },
+                  {
+                    "id": 6,
+                    "pic": "./myStore/hami/7.png",
+                    "title": "2023一路相伴",
+                    "price": 78,
+                    "label": [
+                      "4人份",
+                      "甜味",
+                      "奶油",
+                      "蛋糕胚"
+                    ],
+                    "goodsNum": 0,
+                    "add": true
+                  },
+                  {
+                    "id": 7,
+                    "pic": "./myStore/hami/8.png",
+                    "title": "一寸一礼6英寸蛋糕",
+                    "label": [
+                      "3人份",
+                      "甜味",
+                      "奶油",
+                      "蛋糕胚"
+                    ],
+                    "goodsNum": 0,
+                    "price": 68.0,
+                    "add": true
+                  },
+                  {
+                    "id": 8,
+                    "pic": "./myStore/hami/9.png",
+                    "title": "暴富蛋糕",
+                    "price": 88,
+                    "label": [
+                      "4人份",
+                      "甜味",
+                      "奶油",
+                      "蛋糕胚"
+                    ],
+                    "goodsNum": 0,
+                    "popularityRank": 2,
+                    "add": true
+                  },
+                  {
+                    "id": 9,
+                    "pic": "./myStore/hami/10.png",
+                    "title": "网红裸蛋糕",
+                    "label": [
+                      "4人份",
+                      "甜味",
+                      "奶油",
+                      "蛋糕胚"
+                    ],
+                    "goodsNum": 0,
+                    "price": 78,
+                    "add": true
+                  },
+                  {
+                    "id": 10,
+                    "pic": "./myStore/hami/11.png",
+                    "title": "特价6英寸黑森林",
+                    "label": [
+                      "3人份",
+                      "甜味",
+                      "巧克力",
+                      "蛋糕胚"
+                    ],
+                    "goodsNum": 0,
+                    "price": 28,
+                    "popularityRank": 3,
+                    "add": true
+                  }
+                ]
+              },
+              {
+                "text": "进店必买",
+                "children": [
+                  {
+                    "id": 11,
+                    "pic": "./myStore/hami/12.png",
+                    "title": "日进斗金蛋糕",
+                    "discount": 7,
+                    "coupon": 5,
+                    "goodsNum": 0,
+                    "price": 108,
+                    "label": [
+                      "3人份",
+                      "甜味",
+                      "巧克力",
+                      "蛋糕胚"
+                    ],
+                    "add": true
+                  },
+                  {
+                    "id": 12,
+                    "pic": "./myStore/hami/13.png",
+                    "title": "草莓黄桃一家亲尺寸可选",
+                    "discount": 8,
+                    "coupon": 3,
+                    "goodsNum": 0,
+                    "price": 9.0,
+                    "label": [
+                      "3人份",
+                      "黄桃",
+                      "草莓",
+                      "蛋糕胚"
+                    ],
+                    "add": true
+                  },
+                  {
+                    "id": 13,
+                    "pic": "./myStore/hami/14.png",
+                    "title": "6英寸白巧克力",
+                    "goodsNum": 0,
+                    "discount": 8,
+                    "price": 78,
+                    "label": [
+                      "3人份",
+                      "甜味",
+                      "巧克力",
+                      "蛋糕胚"
+                    ],
+                    "add": true
+                  },
+                  {
+                    "id": 14,
+                    "pic": "./myStore/hami/15.png",
+                    "title": "8英寸网红奔驰款越野车",
+                    "goodsNum": 0,
+                    "price": 108,
+                    "discount": 8,
+                    "label": [
+                      "4人份",
+                      "甜味",
+                      "奶油",
+                      "蛋糕胚"
+                    ],
+                    "add": true
+                  },
+                  {
+                    "id": 15,
+                    "pic": "./myStore/hami/16.png",
+                    "title": "8英寸火烈鸟",
+                    "discount": 8.8,
+                    "goodsNum": 0,
+                    "price": 108,
+                    "label": [
+                      "4人份",
+                      "甜味",
+                      "奶油",
+                      "蛋糕胚"
+                    ],
+                    "add": true
+                  },
+                  {
+                    "id": 16,
+                    "pic": "./myStore/hami/17.png",
+                    "title": "网红许愿天使蛋糕",
+                    "goodsNum": 0,
+                    "discount": 8.8,
+                    "price": 68,
+                    "label": [
+                      "3人份",
+                      "甜味",
+                      "奶油",
+                      "蛋糕胚"
+                    ],
+                    "add": true
+                  },
+                  {
+                    "id": 17,
+                    "pic": "./myStore/hami/18.png",
+                    "title": "8英寸皇冠蛋糕",
+                    "discount": 8,
+                    "goodsNum": 0,
+                    " price": 98,
+                    "label": [
+                      "4人份",
+                      "甜味",
+                      "奶油",
+                      "蛋糕胚"
+                    ],
+                    "add": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "评价",
+          "data": {
+            "content": "",
+            "items": [
+              {}
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "storeImg": "./laolao.png",
+      "title": "外婆家的疙瘩汤",
+      "imgPath": "./laolao1.png",
+      "storeData": [
+        {
+          "name": "点菜",
+          "data": {
+            "content": "点菜",
+            "items": [
+              {
+                "text": "外婆家收藏福利",
+                "children": [
+                  {
+                    "id": 0,
+                    "pic": "./myStore/waipo/1.png",
+                    "title": "酥脆葱花饼",
+                    "num": [
+                      "月售 16",
+                      "好评度 98%"
+                    ],
+                    "goodsNum": 0,
+                    "salesRank": 1,
+                    "price": 14.0,
+                    "add": true
+                  },
+                  {
+                    "id": 1,
+                    "pic": "./myStore/waipo/2.png",
+                    "title": "韭菜盒子",
+                    "num": [
+                      "月售 56",
+                      "好评度 99%"
+                    ],
+                    "goodsNum": 0,
+                    "popularityRank": 1,
+                    "price": 12,
+                    "add": true
+                  }
+                ]
+              },
+              {
+                "text": "外婆家招牌精选",
+                "children": [
+                  {
+                    "id": 5,
+                    "pic": "./myStore/waipo/6.png",
+                    "title": "孜然肉夹馍",
+                    "price": 18.0,
+                    "label": [
+                      "约500g",
+                      "蒜香",
+                      "清炒"
+                    ],
+                    "num": [
+                      "月售 98"
+                    ],
+                    "goodsNum": 0,
+                    "add": true
+                  },
+                  {
+                    "id": 6,
+                    "pic": "./myStore/waipo/7.png",
+                    "title": "外婆家养胃疙瘩汤",
+                    "price": 28.0,
+                    "label": [
+                      "约500g",
+                      "清炒"
+                    ],
+                    "num": [
+                      "月售 26"
+                    ],
+                    "goodsNum": 0,
+                    "add": true
+                  }
+                ]
+              },
+              {
+                "text": "外婆家疙瘩汤",
+                "children": [
+                  {
+                    "id": 11,
+                    "pic": "./myStore/waipo/7.png",
+                    "title": "外婆家养胃疙瘩汤",
+                    "discount": 7,
+                    "coupon": 5,
+                    "num": "",
+                    "goodsNum": 0,
+                    "price": 8.8,
+                    "add": true
+                  },
+                  {
+                    "id": 12,
+                    "pic": "./myStore/waipo/4.png",
+                    "title": "田园时蔬疙瘩汤",
+                    "discount": 8,
+                    "coupon": 3,
+                    "num": 0,
+                    "goodsNum": 0,
+                    "price": 9.0,
+                    "add": true
+                  },
+                  {
+                    "id": 13,
+                    "pic": "./myStore/waipo/5.png",
+                    "title": "香辣酸菜蛋花疙瘩汤",
+                    "num": 0,
+                    "goodsNum": 0,
+                    "discount": 8,
+                    "price": 9.0,
+                    "add": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "套餐",
+          "data": {
+            "content": "",
+            "items": [
+              {}
+            ]
+          }
+        },
+        {
+          "name": "评价",
+          "data": {
+            "content": "",
+            "items": [
+              {}
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "storeImg": "./tongguan.png",
+      "title": "潼关肉夹馍",
+      "imgPath": "./tongguan1.png",
+      "storeData": [
+        {
+          "name": "点菜",
+          "data": {
+            "content": "点菜",
+            "items": [
+              {
+                "text": "经典夹馍",
+                "children": [
+                  {
+                    "id": 0,
+                    "pic": "./myStore/tongguan/1.png",
+                    "title": "老潼关肉夹馍",
+                    "num": [
+                      "月售 5000",
+                      "好评度 100%"
+                    ],
+                    "goodsNum": 0,
+                    "salesRank": 1,
+                    "price": 10.0,
+                    "add": true
+                  },
+                  {
+                    "id": 1,
+                    "pic": "./myStore/tongguan/2.png",
+                    "title": "老潼关纯手肉夹馍",
+                    "num": [
+                      "月售 4000",
+                      "好评度 100%"
+                    ],
+                    "goodsNum": 0,
+                    "popularityRank": 1,
+                    "price": 12,
+                    "add": true
+                  }
+                ]
+              },
+              {
+                "text": "特色凉皮",
+                "children": [
+                  {
+                    "id": 5,
+                    "pic": "./myStore/tongguan/3.png",
+                    "title": "擀面皮",
+                    "price": 8.0,
+                    "label": [
+                      "一人量",
+                      "约400g",
+                      "香辣"
+                    ],
+                    "num": [
+                      "月售 2000"
+                    ],
+                    "goodsNum": 0,
+                    "add": true
+                  },
+                  {
+                    "id": 6,
+                    "pic": "./myStore/tongguan/4.png",
+                    "title": "米皮",
+                    "price": 8.0,
+                    "label": [
+                      "一人量",
+                      "约400g",
+                      "香辣"
+                    ],
+                    "num": [
+                      "月售 1800"
+                    ],
+                    "goodsNum": 0,
+                    "add": true
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "套餐",
+          "data": {
+            "content": "",
+            "items": [
+              {}
+            ]
+          }
+        },
+        {
+          "name": "评价",
+          "data": {
+            "content": "",
+            "items": [
+              {}
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

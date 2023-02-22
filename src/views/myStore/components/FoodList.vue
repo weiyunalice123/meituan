@@ -30,7 +30,6 @@ export default {
   },
   props: ["index", "foodData"],
   setup(props) {
-
     const data = reactive({
       active: 0,
       items: [],

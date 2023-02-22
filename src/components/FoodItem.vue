@@ -43,7 +43,7 @@ export default {
       return props.itemData.goodsNum
     })
     return {
-      value
+      value,
     }
   }
 

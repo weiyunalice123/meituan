@@ -1,8 +1,8 @@
 <template>
-  <div class="nav_item" @click="toStore">
+  <div class="nav_item" @click="toStore(item.title)">
     <div class="img_infor">
       <img :src="item.img">
-      <span v-if="item.isRecommended">
+      <span v-if="item.isRecommended"><!--人气推荐-->
         <LikeIcon/>       
         <i>人气推荐</i>
       </span>
@@ -33,8 +33,13 @@ export default {
   },
   setup() {
     const router = useRouter();
-    const toStore = () => {
-      router.push('/store');
+    const toStore = (title) => {
+      router.push({
+        path: "/store",
+        query: {
+          title
+        }
+      })
     }
     return {
       toStore

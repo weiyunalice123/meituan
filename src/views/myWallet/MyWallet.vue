@@ -18,7 +18,7 @@
               <use :xlink:href="item.iconName"></use>
             </svg>
             <label>{{ item.title }}</label>
-            <van-icon name="arrow" color="#777777" />
+            <van-icon name="arrow" color="#777" />
           </p>
           <p>{{ item.quota }}</p>
           <p>{{ item.text }}</p>
@@ -82,8 +82,6 @@ export default {
       actionClick,
     }
   }
-
-
 }
 </script>
 

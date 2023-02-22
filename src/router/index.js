@@ -100,12 +100,27 @@ const router = createRouter({
       }
     },
     {
+      path: '/smsvalidation',
+      component: () => import('../views/mine/components/SMSValidation.vue'),
+      meta: {
+        isAuth: true
+      }
+    },
+    {
       path: '/login',
       component: () => import('../views/login/Login.vue')
     },
     {
       path: '/register',
       component: () => import('../views/register/Register.vue')
+    },
+    {
+      path: '/edittel',
+      component: () => import('../views/mine/editTel/EditTel.vue')
+    },
+    {
+      path: '/inputvalidatecode',
+      component: () => import('../views/mine/editTel/InputValidateCode.vue')
     }
   ]
 });

@@ -22,8 +22,6 @@
                     <label class="label">{{ i.label }}</label>
                     <p class="coupon_dedline">有效期至{{ i.deadLine }}</p>
                   </div>
-                  <!--<div class="label">{{ i.label }}</div>-->
-                  <!--<van-tag color="#fc4f63" plain>{{ i.label }}</van-tag>-->
                   <div class="desciption">{{ i.desciption }}</div>
                 </div>
                 <div class="right">

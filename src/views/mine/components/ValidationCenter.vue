@@ -15,16 +15,18 @@
 <script>
   import Header from "../../../components/Header.vue";
   import { reactive, toRefs } from "vue";
+  import { useRouter } from "vue-router";
   export default {
     components: {
       Header,
     },
     setup() {
+      const router = useRouter();
       const data = reactive({
 
       });
       const SMSValidation = () => {
-        
+        router.push('/smsvalidation');
       }
       return {
         SMSValidation

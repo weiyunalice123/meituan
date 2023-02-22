@@ -28,7 +28,8 @@ import {
   SwipeItem,
   Form,
   Field,
-  CellGroup
+  CellGroup,
+  Loading,
 } from 'vant';
 import router from './router/index';
 import './common/css/base.less';
@@ -60,7 +61,8 @@ app
   .use(VanImage)
   .use(Form)
   .use(Field)
-  .use(CellGroup);
+  .use(CellGroup)
+  .use(Loading);
 app.use(router);
 app.use(store);
 app.mount('#app');

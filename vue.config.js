@@ -9,4 +9,9 @@ module.exports = {
       },
     },
   },
+  /*devServer: {
+    port: 8081,
+    compress: true,
+    https: true
+  }*/
 };

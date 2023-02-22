@@ -18,7 +18,7 @@
             </i>
           </p>
         </div>
-        <a class="login_Register" v-else href="javscript:void(0);" @click="loginAndRegister">登录/注册</a>
+        <a class="login_Register" v-else @click="loginAndRegister">登录/注册</a>
       </div>
     </div>
     <div class="content">
@@ -59,11 +59,12 @@ export default {
   setup() {
     const router = useRouter();
     const store = useStore();
+    let localStorageData = JSON.parse(localStorage.getItem("userInfo"));
     const data = reactive({
       isLogin: localStorage.getItem("isLogin"),
       userinfo: {
-        userName: "every_day_smile",
-        tel: 18240898953,
+        username: localStorageData && localStorageData.username ? localStorageData.username : '',
+        tel: localStorageData && localStorageData.tel ? localStorageData.tel : '',
         actionList: [
           {
             id: 1,
@@ -148,12 +149,16 @@ export default {
           case 5:
             router.push('/address');
             break;
+          case 9:
+          changePhoneNum();
+          break;
         }
       }
     }
 
     //修改电话号码
     const changePhoneNum = () => {
+      store.commit('UPDATE_CURRENT_ROUTE', '/mine');
       router.push("/validationcenter");
     }
 
@@ -161,6 +166,7 @@ export default {
     const logout = () => {
       router.push('/login');
       localStorage.setItem("isLogin", "0");
+      store.commit("UPDATE_CURRENT_ROUTE", '/mine');
     }
 
     //登录注册
